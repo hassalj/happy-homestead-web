@@ -50,7 +50,7 @@ const ServicesSection = () => {
                 <div className="service-overlay rounded-lg" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-xl font-bold text-hero-foreground mb-2">{service.title}</h3>
-                  <p className="text-sm text-hero-foreground/80 line-clamp-3">{service.description}</p>
+                  <p className="text-sm text-hero-foreground/80">{service.description}</p>
                 </div>
               </div>
             </div>
