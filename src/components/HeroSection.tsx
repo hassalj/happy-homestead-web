@@ -23,7 +23,7 @@ const HeroSection = () => {
           </h1>
 
           <div className="mb-8">
-            <img src={logo} alt="INT Security" className="h-24 md:h-32 w-auto brightness-0 invert" />
+            <img src={logo} alt="INT Security" className="h-24 md:h-32 w-auto" />
           </div>
 
           <a href="#offert" className="btn-primary">
