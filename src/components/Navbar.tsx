@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-section-dark/95 backdrop-blur-sm shadow-lg"
+          ? "bg-white/95 backdrop-blur-sm shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -38,7 +38,7 @@ const Navbar = () => {
             <a
               key={item.href}
               href={item.href}
-              className="nav-link text-section-dark-foreground hover:text-primary"
+              className={`nav-link hover:text-primary ${scrolled ? "text-gray-800" : "text-section-dark-foreground"}`}
             >
               {item.label}
             </a>
@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-section-dark-foreground"
+          className={`md:hidden ${scrolled ? "text-gray-800" : "text-section-dark-foreground"}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -63,13 +63,13 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-section-dark/95 backdrop-blur-sm border-t border-border/20 px-4 py-4 space-y-3">
+        <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-border/20 px-4 py-4 space-y-3">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block nav-link text-section-dark-foreground hover:text-primary py-2"
+              className="block nav-link text-gray-800 hover:text-primary py-2"
             >
               {item.label}
             </a>
