@@ -1,5 +1,5 @@
 import heroImg from "@/assets/hero-security.jpg";
-import logo from "@/assets/logo-int-security.jpg";
+import logo from "@/assets/logo-int-security.png";
 
 const HeroSection = () => {
   return (
@@ -23,7 +23,7 @@ const HeroSection = () => {
           </h1>
 
           <div className="mb-8">
-            <img src={logo} alt="INT Security" className="h-16 md:h-20 w-auto" />
+            <img src={logo} alt="INT Security" className="h-24 md:h-32 w-auto" />
           </div>
 
           <a href="#offert" className="btn-primary">
