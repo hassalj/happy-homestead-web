@@ -107,7 +107,7 @@
   }
 
   .service-card {
-    @apply relative overflow-hidden group cursor-pointer;
+    @apply relative overflow-hidden cursor-pointer;
   }
 
   .service-card img {
