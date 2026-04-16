@@ -38,7 +38,7 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((service) => (
             <div key={service.title} className="service-card rounded-lg">
-              <div className="relative min-h-[320px] overflow-hidden rounded-lg">
+              <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -50,7 +50,7 @@ const ServicesSection = () => {
                 <div className="service-overlay rounded-lg" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-xl font-bold text-hero-foreground mb-2">{service.title}</h3>
-                  <p className="text-sm text-hero-foreground/80">{service.description}</p>
+                  <p className="text-sm text-hero-foreground/80 line-clamp-2">{service.description}</p>
                 </div>
               </div>
             </div>
