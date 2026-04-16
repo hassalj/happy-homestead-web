@@ -22,9 +22,6 @@ const HeroSection = () => {
             Din specialist inom kamera, tele &amp; nätverksinstallation
           </h1>
 
-          <div className="mb-8 bg-white inline-block px-6 py-3 rounded">
-            <img src={logo} alt="INT Security" className="h-24 md:h-32 w-auto" />
-          </div>
 
           <a href="#offert" className="btn-primary">
             Begär Offert
