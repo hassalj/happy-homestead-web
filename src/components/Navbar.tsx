@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="w-full bg-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <a href="#hem" className="inline-block">
-            <img src={logo} alt="INT Security" className="h-12 md:h-14 w-auto" />
+            <img src={logo} alt="INT Security" className="h-16 md:h-20 w-auto" />
           </a>
         </div>
       </div>
