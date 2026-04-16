@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <img src={logo} alt="INT Security" className="h-14 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="INT Security" className="h-14 w-auto mb-4" />
             <p className="text-footer-foreground text-sm">
               Din specialist inom kamera, tele &amp; nätverksinstallation.
             </p>
