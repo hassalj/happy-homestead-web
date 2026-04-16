@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "@/assets/logo-int-security.jpg";
+import logo from "@/assets/logo-int-security.png";
 
 const navItems = [
   { label: "Hem", href: "#hem" },
@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
         <a href="#hem" className="flex-shrink-0">
-          <img src={logo} alt="INT Security" className="h-8 md:h-10 w-auto" />
+          <img src={logo} alt="INT Security" className="h-12 md:h-14 w-auto" />
         </a>
 
         {/* Desktop nav */}
