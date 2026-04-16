@@ -25,6 +25,8 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const [expanded, setExpanded] = useState<string | null>(null);
+
   return (
     <section id="tjanster" className="py-20 md:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,25 +39,34 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <div key={service.title} className="service-card rounded-lg">
-              <div className="aspect-[4/3] relative overflow-hidden rounded-lg">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  width={800}
-                  height={640}
-                />
-                <div className="service-overlay rounded-lg" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-hero-foreground mb-2">{service.title}</h3>
-                  <p className="text-sm text-hero-foreground/80 line-clamp-2">{service.description}</p>
+          {services.map((service) => {
+            const isExpanded = expanded === service.title;
+            return (
+              <div
+                key={service.title}
+                className="service-card rounded-lg cursor-pointer"
+                onClick={() => setExpanded(isExpanded ? null : service.title)}
+              >
+                <div className={`relative overflow-hidden rounded-lg transition-all duration-300 ${isExpanded ? "aspect-[3/4]" : "aspect-[4/3]"}`}>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    width={800}
+                    height={640}
+                  />
+                  <div className="service-overlay rounded-lg" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-bold text-hero-foreground mb-2">{service.title}</h3>
+                    <p className={`text-sm text-hero-foreground/80 transition-all duration-300 ${isExpanded ? "" : "line-clamp-2"}`}>
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="text-center mt-12">
