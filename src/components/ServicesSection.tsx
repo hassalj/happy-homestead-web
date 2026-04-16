@@ -38,7 +38,7 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((service) => (
             <div key={service.title} className="service-card rounded-lg">
-              <div className="aspect-[4/3] overflow-hidden rounded-lg">
+              <div className="relative min-h-[320px] overflow-hidden rounded-lg">
                 <img
                   src={service.image}
                   alt={service.title}
