@@ -31,7 +31,7 @@ const Footer = () => {
           <div>
             <h4 className="text-gray-900 font-semibold mb-4">Kontakt</h4>
             <div className="space-y-2 text-sm text-gray-600">
-              <p>Södergatan 76</p>
+              <p><p>Gustav Adolfs Gata 15</p></p>
               <p>252 19 Helsingborg</p>
             </div>
           </div>
