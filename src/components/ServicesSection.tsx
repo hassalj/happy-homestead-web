@@ -1,3 +1,4 @@
+import { useState } from "react";
 import serviceCamera from "@/assets/service-camera.jpg";
 import serviceElectrical from "@/assets/service-electrical.jpg";
 import serviceNetwork from "@/assets/service-network.jpg";
