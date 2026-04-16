@@ -1,5 +1,4 @@
 import heroImg from "@/assets/hero-security.jpg";
-import logo from "@/assets/logo-int-security.png";
 
 const HeroSection = () => {
   return (
